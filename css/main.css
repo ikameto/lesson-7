@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+head,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 2%;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 630px;
+  background: #22b573;
+  border: 3px solid #1b4e37;
+}
+
+.navigation {
+  position: absolute;
+  top: 35px;
+  left: 18px;
+}
+
+.nav-bar {
+  display: inline-block;
+  margin: 0 16px 0 0;
+}
+
+.navigation :last-child {
+  margin: 0;
+}
+
+.nav-bar a {
+  font-size: 50px;
+  color: white;
+}
+
+.logo {
+  position: absolute;
+  bottom: 1%;
+  right: 0;
+  height: 80%;
+}
+
+.head-box {
+  position: absolute;
+  bottom: -2%;
+  left: -2%;
+  width: 60%;
+  height: 60%;
+  background: white;
+  z-index: 2;
+}
+
+.box-1 {
+  position: absolute;
+  top: 22%;
+  left: 25%;
+  width: 30%;
+  height: 55%;
+  background: green;
+  z-index: 3;
+  transition: transform 1500ms;
+}
+
+.text {
+  position: absolute;
+  top: 42%;
+  left: 20%;
+  z-index: 7;
+  transform: rotate(38deg);
+  font-size: 22px;
+  font-weight: 900;
+  color: yellow;
+  transition: transform 1000ms;
+}
+
+.text2 {
+  position: absolute;
+  bottom: 5%;
+  right: 3%;
+  color: green;
+  font-size: 12px;
+  transition: transform 1000ms;
+}
+
+.text3 {
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+  font-size: 12px;
+  color: yellow;
+}
+
+.head-box:hover .text {
+  transform: rotate(0);
+}
+
+.head-box:hover .text2 {
+  position: absolute;
+  transform: translate(-200px, 0);
+}
+
+.head-box:hover .box-1 {
+  background: aqua;
+  transform: rotate(45deg);
+}
